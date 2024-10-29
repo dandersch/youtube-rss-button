@@ -1,0 +1,4 @@
+Violentmonkey Userscript that adds an "RSS" button next to the "Subscribe"
+button on YouTube videos. Subscribes an RSS client that is Google Reader
+API-compatible to the channel feed when pressed. Set ~apiUrl~, ~username~ and
+~apiPasswd~ in the script to use it.
