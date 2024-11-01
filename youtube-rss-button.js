@@ -36,7 +36,7 @@
                         const subscribeButton = document.querySelector('ytd-subscribe-button-renderer');
                         if (!document.getElementById('rss-button')) {
                             const rssButton = createRssButton(channelId);
-                            subscribeButton.parentNode.insertBefore(rssButton, subscribeButton.nextSibling);
+                            subscribeButton.insertBefore(rssButton, subscribeButton.nextSibling);
                         }
                     } else {
                         console.log('Channel ID not found');
@@ -56,13 +56,14 @@
 
         // TODO stylize
         const button = document.createElement('button');
-        button.innerText             = 'RSS';
+        button.innerText             = '🛜';
+        button.style.fontWeight      = 'bold';
         button.style.marginLeft      = '10px';
         button.style.padding         = '5px 10px';
-        button.style.backgroundColor = '#FF0000';
+        button.style.backgroundColor = '#FFFFFF';
         button.style.color           = '#FFFFFF';
         button.style.border          = 'none';
-        button.style.borderRadius    = '5px';
+        button.style.borderRadius    = '15px';
         button.style.cursor          = 'pointer';
         button.id                    = 'rss-button';
 
